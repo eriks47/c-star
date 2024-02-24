@@ -121,6 +121,7 @@ coords_t compute_next_position(int *map, int w, int h, coords_t source, coords_t
                 free(history[i]);
             }
             free(closed);
+            free(history);
 
             return coords;
         }
